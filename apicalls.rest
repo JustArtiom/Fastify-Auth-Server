@@ -1,0 +1,29 @@
+POST http://localhost:3000/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "imartiom@gmail.com",
+    "username": "hello",
+    "password": "Artiom12345$"
+} 
+
+### 
+POST http://localhost:3000/v1/auth/login
+Content-Type: application/json
+ 
+{
+    "email": "imartiom@gmail.com",
+    "password": "Artiom12345$"
+}
+
+###
+POST http://localhost:3000/v1/auth/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzUsImlhdCI6MTcwNzMzMzc1Mn0.nSem0NW3bDBd-KcMAOeZTP9LJ0D-fPBIrtIyjfYO48c"
+}
+
+###
+GET http://localhost:3000/v1/@me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzUsImlhdCI6MTcwNzMzMzc2OSwiZXhwIjoxNzA3MzMzNzg0fQ.mMjKKHRsVxkmKpqw33I8mWBDbGLXMaOSGofjft_qdLY

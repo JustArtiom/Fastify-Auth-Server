@@ -1,0 +1,1 @@
+INSERT INTO refreshtokens (user_id, refresh_token) VALUES ($1, $2);
